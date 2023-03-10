@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1d61ba4e5b237ed44a006662fed79381, type: 2}
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11623233, g: 0.10086625, b: 0.084941424, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -460,6 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCanvas: {fileID: 8643748125938208871}
+  mainWorld: {fileID: 0}
   bootloader: {fileID: 4312892855279442780}
   textBootloaderTip: {fileID: 143202488613907243}
   textBootloaderUpgress: {fileID: 420534913396139770}
@@ -477,6 +478,37 @@ MonoBehaviour:
   m_Script: {fileID: 207137136, guid: fb2a4e3aa605ba745ba787e74dd18d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1845108405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845108406}
+  m_Layer: 0
+  m_Name: MainWorld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845108406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845108405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040154299
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +710,7 @@ GameObject:
   - component: {fileID: 2715599167955852967}
   - component: {fileID: 2752708430179463242}
   - component: {fileID: 5841019139423977158}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -696,7 +728,7 @@ GameObject:
   - component: {fileID: 4279681679760150765}
   - component: {fileID: 4310357860399007373}
   - component: {fileID: 420534913396139770}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: txtValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +843,7 @@ GameObject:
   - component: {fileID: 8621816872935667759}
   - component: {fileID: 1736287545388527914}
   - component: {fileID: 1439161197504847585}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6028787328742803887}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: '[Bootloader]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +906,7 @@ GameObject:
   - component: {fileID: 2115139024272271067}
   - component: {fileID: 4629524130195844232}
   - component: {fileID: 9086058258614003996}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: imgLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -952,7 +984,7 @@ GameObject:
   - component: {fileID: 7045165918444482640}
   - component: {fileID: 7211315460817176108}
   - component: {fileID: 143202488613907243}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: txtTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -996,7 +1028,7 @@ GameObject:
   - component: {fileID: 2813120590069768275}
   - component: {fileID: 8984721761851995804}
   m_Layer: 5
-  m_Name: canvasHUD
+  m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

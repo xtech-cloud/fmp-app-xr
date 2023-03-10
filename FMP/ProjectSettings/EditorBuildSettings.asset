@@ -6,20 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/launcher.unity
+    path: Assets/Scenes/Launcher.unity
     guid: 9326fcc7fb1d5d540b45a2ff6d6d3d75
   - enabled: 1
-    path: Assets/Scenes/selector.unity
+    path: Assets/Scenes/Selector.unity
     guid: be6ce3b3cd2d1db4eb309782f81d174c
   - enabled: 1
     path: Assets/Scenes/splash.unity
     guid: e34ebf3de866284418cb1254c77beeec
   - enabled: 1
-    path: Assets/Scenes/upgrade.unity
-    guid: 86f5b8cf0062f5f4fbe6e15d87717931
-  - enabled: 1
-    path: Assets/Scenes/startup.unity
+    path: Assets/Scenes/Startup.unity
     guid: acec2cb79dba7bf49b8cd11c34c3cbb6
+  - enabled: 1
+    path: Assets/Scenes/FrameworkUpdate.unity
+    guid: 9cf167d64fab34c4895c4223922491cc
+  - enabled: 1
+    path: Assets/Scenes/AssetSyndication.unity
+    guid: 73a7a8ddc2f0a0a4ab35845c7aca528c
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: ca45074f517644148bec855119fc042c,
       type: 2}
