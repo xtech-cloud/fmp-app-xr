@@ -3,6 +3,8 @@ DEL /S/Q ..\..\FMP\Assets\SteamVR
 DEL /S/Q ..\..\FMP\Assets\SteamVR.meta
 DEL /S/Q ..\..\FMP\Assets\SteamVR_Resources
 DEL /S/Q ..\..\FMP\Assets\SteamVR_Resources.meta
+DEL /S/Q ..\..\FMP\Assets\SteamVR_Input
+DEL /S/Q ..\..\FMP\Assets\SteamVR_Input.meta
 DEL /S/Q ..\..\FMP\Assets\StreamingAssets
 DEL /S/Q ..\..\FMP\Assets\StreamingAssets.meta
 DEL /S/Q ..\..\FMP\Assets\XR\Loaders
