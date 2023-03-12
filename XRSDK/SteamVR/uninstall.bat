@@ -11,4 +11,5 @@ DEL /S/Q ..\..\FMP\Assets\XR\Loaders
 DEL /S/Q ..\..\FMP\Assets\XR\Loaders.meta
 DEL /S/Q ..\..\FMP\Assets\XR\Settings
 DEL /S/Q ..\..\FMP\Assets\XR\Settings.meta
+DEL /S/Q ..\..\FMP\unityProject.vrmanifest
 pause
