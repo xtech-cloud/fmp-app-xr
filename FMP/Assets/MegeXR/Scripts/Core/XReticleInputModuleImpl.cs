@@ -140,14 +140,28 @@ namespace XTC.FMP.APP.XR
             CurrentEventData.delta = currentPose - lastPose;
             lastPose = currentPose;
 
-            // Check to make sure the Raycaster being used is a XRaycaster.
             if (raycastResult.module != null
-                && !(raycastResult.module is XPointerGraphicRaycaster)
-                && !(raycastResult.module is XPointerPhysicsRaycaster))
+                && (raycastResult.module is UnityEngine.UI.GraphicRaycaster))
             {
                 Debug.LogWarning("Using Raycaster (Raycaster: " + raycastResult.module.GetType() +
                   ", Object: " + raycastResult.module.name + "). It is recommended to use " +
-                  "XPointerPhysicsRaycaster or XPointerGrahpicRaycaster with XPointerInputModule.");
+                  "XPointerGrahpicRaycaster with XPointerInputModule.");
+                var raycaster = raycastResult.module.gameObject.GetComponent<UnityEngine.UI.GraphicRaycaster>();
+                Object.Destroy(raycaster);
+                raycastResult.module.gameObject.AddComponent<XPointerGraphicRaycaster>();
+                Debug.LogWarning("GraphicRaycaster is replaced by XPointerGrahpicRaycaster");
+            }
+
+            if (raycastResult.module != null
+                && (raycastResult.module is XPointerPhysicsRaycaster))
+            {
+                Debug.LogWarning("Using Raycaster (Raycaster: " + raycastResult.module.GetType() +
+                  ", Object: " + raycastResult.module.name + "). It is recommended to use " +
+                  "XPointerPhysicsRaycaster with XPointerInputModule.");
+                var raycaster = raycastResult.module.gameObject.GetComponent<PhysicsRaycaster>();
+                Object.Destroy(raycaster);
+                raycastResult.module.gameObject.AddComponent<XPointerPhysicsRaycaster>();
+                Debug.LogWarning("PhysicsRaycaster is replaced by XPointerPhysicsRaycaster");
             }
         }
     }//class
