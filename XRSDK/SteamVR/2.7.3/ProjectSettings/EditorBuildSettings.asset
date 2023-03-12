@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Launcher.unity
+    guid: 9326fcc7fb1d5d540b45a2ff6d6d3d75
+  - enabled: 1
+    path: Assets/Scenes/Selector.unity
+    guid: be6ce3b3cd2d1db4eb309782f81d174c
+  - enabled: 1
+    path: Assets/Scenes/splash.unity
+    guid: e34ebf3de866284418cb1254c77beeec
+  - enabled: 1
+    path: Assets/Scenes/Startup.unity
+    guid: acec2cb79dba7bf49b8cd11c34c3cbb6
+  - enabled: 1
+    path: Assets/Scenes/FrameworkUpdate.unity
+    guid: 9cf167d64fab34c4895c4223922491cc
+  - enabled: 1
+    path: Assets/Scenes/AssetSyndication.unity
+    guid: 73a7a8ddc2f0a0a4ab35845c7aca528c
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b3e0eebeefe173a47bd5f19dbd58e018,
+      type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: ca45074f517644148bec855119fc042c,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 97863f12b8f47964484531d6246837db,
+      type: 2}
