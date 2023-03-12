@@ -12,4 +12,9 @@ DEL /S/Q ..\..\FMP\Assets\XR\Loaders.meta
 DEL /S/Q ..\..\FMP\Assets\XR\Settings
 DEL /S/Q ..\..\FMP\Assets\XR\Settings.meta
 DEL /S/Q ..\..\FMP\unityProject.vrmanifest
+
+xcopy /E/Y/Q ..\Backup\Assets ..\..\FMP\Assets\
+xcopy /E/Y/Q ..\Backup\Packages ..\..\FMP\Packages\
+xcopy /E/Y/Q ..\Backup\ProjectSettings ..\..\FMP\ProjectSettings\
+
 pause
